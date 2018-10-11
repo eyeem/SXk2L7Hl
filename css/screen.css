@@ -1,0 +1,1270 @@
+/* Reset */
+
+html, body{
+	color: #00112c;
+    font-family: -apple-system, BlinkMacSystemFont,
+    "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans",
+    "Droid Sans", "Helvetica Neue", sans-serif;
+    font-size: 15px;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    font-smoothing: antialiased;
+    margin: 0;
+    padding: 0;
+    position: relative;
+	vertical-align: middle;
+    width: 100%;
+}
+
+ul, li {
+	margin: 0;
+	padding: 0;
+}
+
+table {
+	border-spacing: 0;
+}
+
+h1 {
+	font-size: 2em;
+	font-weight: bold;
+	padding: 0 0 1em;
+}
+
+h2 {
+	font-size: 1.5em;
+	font-weight: bold;
+  	padding: 0 0 1em;
+}
+
+h3 {
+	font-size: 1.3em;
+}
+
+h4 {
+	font-size: 1em;
+}
+
+h5 {
+	font-size: 0.8em;
+}
+
+h6 {
+	font-size: 0.7em;
+}
+
+tr {
+	box-sizing: border-box;
+	padding: 5px 0 0 0;
+}
+
+/* Content area */
+#content, #foot {
+	margin: 0 auto;
+	max-width: 920px;
+	width: 100%;
+}
+
+#content {
+	background: #fbfbfb;
+	border-color: #d6d6d6;
+    -moz-border-radius: 4px 4px 0 0;
+    -webkit-border-radius: 4px 4px 0 0;
+    border-radius: 4px 4px 0 0;
+    border-style: solid;
+    border-width: 1px;
+    margin-top: 40px;
+    padding: 20px;
+}
+
+#nextstep {
+	display: none;
+}
+
+#foot {
+	background: #fbfbfb;
+	border-color: #d6d6d6;
+	 -moz-border-radius: 0 0 4px 4px;
+    -webkit-border-radius: 0 0 4px 4px;
+    border-radius: 0 0 4px 4px;
+    border-style: solid;
+    border-width: 0 1px 1px;
+    margin-top: -3px;
+	padding: 0 20px 40px;
+}
+
+#paymentMethods {
+	padding: 20px 0 0 0;
+}
+
+@media screen and (max-width: 960px) {
+
+	body {
+		background: #fbfbfb;
+	}
+
+	#content {
+		border: none;
+		padding: 0;
+	}
+
+	#foot {
+		border: none;
+		padding: 20px 0 0 10px;
+	}
+
+	table {
+		padding: 0 10px;
+		max-width: 100%;
+	}
+
+	#stageheader {
+		padding: 0 10px;
+	}
+
+	label {
+		max-width: 80%;
+	}
+
+	#errorFrame {
+		padding-left: 10px;
+	}
+}
+
+/* Image payment buttons */
+.imgB {
+	width: 158px;
+	height: 32px;
+	padding: 0;
+	border: 0;
+	background: transparent url("../img/bg_buttons.png") no-repeat left 0;
+	overflow: hidden;
+	color: #444;
+	cursor: pointer;
+	outline: none;
+}
+
+.imgB:hover, .imgB:active {
+	color: #0abf53;
+}
+
+.pmB {
+	width: 400px;
+	height: 42px;
+	padding-left: 85px;
+	text-align: left;
+	margin-bottom: 6px;
+	font-size: 1.1em;
+	background-color: transparent;
+}
+
+/* Payment information */
+#displayAmount {
+	display: block;
+	font-weight: 500;
+	padding: 0 0 20px 0;
+}
+
+/* Form */
+.inputField, input[type="text"], input[type="password"] {
+    background: white;
+    border: 1px solid #d8d8d8;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size:  0.93333333333em;
+    height: 35px;
+    padding: 8px;
+    position: relative;
+	margin-top: 10px;
+}
+
+.inputField-spacing-top {
+	padding-top: 10px;
+}
+
+input[type="checkbox"].inputField {
+	height: 15px;
+	margin-right: 8px;
+	width: auto;
+}
+
+select {
+    background: white;
+    border: 1px solid #d8d8d8;
+    box-shadow: none;
+    font-size:  0.93333333333em;
+    height: 40px;
+    margin-top: 4px;
+    max-width: 420px;
+    padding: 5px 8px;
+    position: relative;
+}
+
+label {
+	float: left;
+  line-height: 15px;
+	position: relative;
+}
+
+.errorDiv {
+	padding: 20px 0 0;
+}
+
+#errorFrameValidationErrors {
+	padding: 10px 10px 20px 0;
+}
+
+#errorFrame .red {
+	color: #ff7d00;
+}
+
+.fieldDiv {
+	float: left;
+	padding: 0;
+	position: relative;
+	width: 100%;
+}
+
+/* Order data */
+
+table.od {
+	margin: 10px 0 10px 0;
+}
+
+table.od td, table.od th  {
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+/* Card fields */
+.hpp-expiry-month, .hpp-expiry-year {
+	width: 40%;
+}
+
+.card.cvcWhatIs {
+	color: #30c94a;
+	float: left;
+  margin-top: 10px;
+	text-decoration: underline;
+}
+
+/* Next steps area */
+#nextstep {
+	padding: 20px 0;
+}
+
+.paySubmit {
+    background-color: black;
+    background-repeat: no-repeat; 
+    height: 16px; 
+    width: 50px; 
+	font-size: 0px;
+	color: white; 
+    border: 0px; 
+}
+
+
+.nextB,
+#mainSubmit,
+#paySubmit,
+#klarnaOpenInvoiceGetAddressButton {
+	background-color: #30c94a;
+    border: 0;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    border-radius: 4px;
+    display: block;
+    color: white;
+    cursor: pointer;
+    font-size: 1em;
+    font-weight: 500;
+    text-align: center;
+    text-transform: capitalize;
+    padding: 14px 0;
+    max-width: 200px;
+    width: 100%;
+}
+
+#mainBack {
+	background: transparent;
+	border: 0;
+	color: #717171;
+	cursor: pointer;
+	font-size: 1em;
+  margin: 40px 0 0;
+  padding: 0;
+	text-decoration: underline;
+  text-transform: capitalize;
+}
+
+#mainBack:hover {
+	color: #00112c;
+}
+
+.nextB:hover, .nextB:active {
+    background-color: #00914b;
+}
+
+/* Oneclick -- fix issues and restyle */
+.pmOc {
+	margin-bottom: 10px;
+}
+
+.pmOc div.pmOcDetail {
+	background-color: #EEEEEE;
+	border: 1px solid #B4B4B4;
+	padding: 6px;
+	display: block;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	width: 400px;
+}
+
+.pmOc div.pmOcPad {
+	height: 1px;
+	display: block;
+	clear: both;
+}
+
+.pmOcRemove {
+	float: left;
+	margin-left: 10px;
+}
+
+.pmOcInput {
+	background-color: #fff;
+}
+
+.pmOcRadio {
+	float: left;
+}
+
+.pmOcDetailSummary {
+	height: 97px; /*101px;*/
+	width: 160px;
+	color: white;
+	clear:both;
+	font-family:monospace;
+	font-size: 11px;
+	font-weight:bold;
+	line-height:1.3;
+	padding-top: 10px;
+	margin:4px 0 0 4px;
+}
+
+.pmOcDetailSummaryCard {
+	background-image: url(/hpp/img/card_generic.png);
+	background-repeat: no-repeat;
+}
+
+.pmOcDetailSummaryElv {
+	background-image: url(/hpp/img/elv_generic.png);
+	background-repeat: no-repeat;
+}
+
+.pmOcLogo {
+	height:22px;
+	width:40px;
+	background-color: white;
+	margin: 0 0 11px 110px;
+}
+
+.pmOcElv {
+	color: #888;
+	margin-bottom: 19px;
+	height:15px;
+	margin-left: 10px;
+	letter-spacing: 3px;
+}
+
+.pmOcPan {
+	height:15px;
+	padding-top: 9px;
+	margin-left: 14px;
+}
+
+.pmOcExp {
+	height:15px;
+	font-size: 10px;
+	margin-left: 105px;
+}
+
+.pmOcName {
+	height:15px;
+	margin-left: 14px;
+	text-transform: uppercase;
+}
+
+.pmOcArrow {
+	margin-left: 65px;
+	height: 20px;
+	background-repeat: no-repeat;
+	background-image: url(/hpp/img/arrow_down.png);
+}
+
+.pmOcOverview {
+	margin-bottom: 10px;
+	display: block;
+}
+
+.pmOcOverview div.pmOcDetail {
+	background-color: #EEEEEE;
+	border: 1px solid #B4B4B4;
+	padding: 6px;
+	display: block;
+	margin-right: 8px;
+	margin-bottom: 8px;
+	float: left;
+	width: 278px;
+}
+
+.pmOcOverview div.pmOcDetailSummary {
+	margin: 0;
+	padding: 0;
+	height: 58px;
+	width: 272px;
+	clear:both;
+	font-size: 11px;
+	font-weight:normal;
+	line-height:1.3;
+	cursor: pointer;
+	color: black;
+	font-family: tahoma, verdana, arial, sans-serif;
+}
+
+.pmOcOverview div.pmOcPad {
+	height: 1px;
+	display: block;
+	clear: both;
+}
+
+.pmOcOverview div.pmOcLogo {
+	height:22px;
+	width:40px;
+	background-color: white;
+	margin: 0;
+}
+
+.pmOcOverview div.pmOcField1 {
+	height:15px;
+	padding-top: 9px;
+	margin-left: 0;
+}
+
+.pmOcOverview div.pmOcField2 {
+	padding-top: 0;
+	height:15px;
+	margin-left: 0;
+}
+
+.pmOcOverview span.pmOcFieldTitle {
+	float: left;
+	width: 130px;
+}
+
+.ocRemoveDetail {
+	cursor: pointer;
+	position: relative;
+	top: 3px;
+	left: 2px;
+}
+
+.ocNewDetailsLink {
+	cursor: pointer;
+	text-decoration: underline;
+}
+
+.ocStoredDetails {
+	font-size: 1.25em;
+}
+
+/* Bancontact app and Bitcoin */
+.hpp-bcmc_mobile-container,
+.hpp-bcmc_mobile-container *,
+.hpp-wechatpay-container,
+.hpp-wechatpay-container *,
+.hpp-qrcode,
+.hpp-qrcode *{
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.hpp-stage-header {
+	margin: 30px 0;
+}
+
+#content .hpp-bcmc_mobile-title,
+#content .hpp-wechatpay-title,
+#content .hpp-qrcode-title {
+	float: left;
+	padding: 0;
+	margin: 0;
+	max-width: 100%;
+	line-height: 28px;
+	word-break: break-all;
+}
+
+.hpp-bcmc_mobile-logo {
+	float: right;
+	height: 35px;
+	margin-top: -2px;
+}
+
+.hpp-wechatpay-logo {
+	float: right;
+	height: 25px;
+}
+
+.hpp-qrcode-logo {
+	float: right;
+}
+
+.hpp-bcmc_mobile,
+.hpp-wechatpay,
+.hpp-qrcode-outer-container {
+	border: 1px solid #cdcdd3;
+	background: #ffffff;
+}
+
+.hpp-bcmc_mobile-app,
+.hpp-bcmc_mobile-qrcode,
+.hpp-wechatpay-wallet,
+.hpp-wechatpay-qrcode,
+.hpp-qrcode-container {
+	display: block;
+	width: 49.5%;
+}
+
+.hpp-bcmc_mobile-app,
+.hpp-bcmc_mobile-qrcode-url,
+.hpp-wechatpay-wallet,
+.hpp-qrcode-wallet {
+	padding: 27px;
+}
+
+.hpp-wechatpay-qrcode-url,
+.hpp-qrcode-qrcode-url {
+	padding: 34px;
+}
+
+.hpp-bcmc_mobile-app,
+.hpp-wechatpay-wallet,
+.hpp-qrcode-wallet {
+	float: left;
+}
+
+.hpp-bcmc_mobile-app-label,
+.hpp-bcmc_mobile-app-original,
+.hpp-wechatpay-wallet-label,
+.hpp-wechatpay-wallet-original,
+.hpp-wechatpay-wallet-btc,
+.hpp-qrcode-wallet-original,
+.hpp-qrcode-wallet-btc {
+	font-size: 18px;
+}
+
+.hpp-bcmc_mobile-currency {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.hpp-wechatpay-currency {
+	text-align: center;
+}
+
+.hpp-qrcode-currency {
+	text-align: center;
+	font-weight: 600;
+	font-size: 18px;
+}
+
+.hpp-bcmc_mobile-currency-table,
+.hpp-wechatpay-currency-table {
+	display: inline-block;
+}
+
+.hpp-bcmc_mobile-app-original,
+.hpp-wechatpay-wallet-original,
+.hpp-wechatpay-wallet-btc {
+	display: table-row;
+}
+
+.hpp-bcmc_mobile-app-original span,
+.hpp-wechatpay-wallet-original span {
+	padding-bottom: 5px;
+}
+
+.hpp-bcmc_mobile-app-original span,
+.hpp-wechatpay-wallet-original span,
+.hpp-wechatpay-wallet-btc span {
+	display: table-cell;
+}
+
+.hpp-bcmc_mobile-app-original .before-digit,
+.hpp-wechatpay-wallet-original .before-digit,
+.hpp-wechatpay-wallet-btc .before-digit {
+	text-align: right;
+}
+
+.hpp-bcmc_mobile-app-original .currency,
+.hpp-wechatpay-wallet-original .currency,
+.hpp-wechatpay-wallet-btc .currency {
+	padding-right: 5px;
+}
+
+.hpp-bcmc_mobile-app-button,
+.hpp-bcmc_mobile-qr-button,
+.hpp-bcmc_mobile-timer,
+.hpp-wechatpay-wallet-button,
+.hpp-wechatpay-qr-button,
+.hpp-wechatpay-timer,
+.hpp-qrcode-timer {
+	font-size: 16px;
+	text-align: center;
+}
+
+.hpp-bcmc_mobile-app-label,
+.hpp-wechatpay-wallet-label,
+.hpp-qrcode-wallet-label {
+	margin-bottom: 25px;
+	text-align: center;
+}
+
+.hpp-bcmc_mobile-app-original,
+.hpp-wechatpay-wallet-original {
+	font-weight: 600;
+}
+
+.hpp-bcmc_mobile-qr-how,
+.hpp-qrcode-how {
+	font-size: 14px;
+	margin: 60px 20px;
+	text-align: center;
+}
+
+.hpp-bcmc_mobile-app-info,
+.hpp-bcmc_mobile-qr-info {
+	display: none;
+	margin-left: 10px;
+}
+
+.hpp-bcmc_mobile-app-button,
+.hpp-bcmc_mobile-qr-button {
+	border: 1px solid #3c8a2e;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: none;
+	margin: 10px 10px 28px 10px;
+	line-height: 45px;
+}
+
+.hpp-wechatpay-wallet-button,
+.hpp-wechatpay-qr-button {
+	border: 1px solid #3c8a2e;
+	-webkit-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	cursor: pointer;
+	display: block;
+	margin: 22px 10px 28px 10px;
+	line-height: 45px;
+}
+
+.hpp-bcmc_mobile-app-button,
+.hpp-bcmc_mobile-qr-button {
+	background: #3c8a2e;
+	color: #ffffff;
+}
+
+.hpp-bcmc_mobile-app-button.inactive,
+.hpp-wechatpay-wallet-button.inactive,
+.hpp-wechatpay-qr-button {
+	border-color: #cdcdd3;
+	background: #ffffff;
+	color: #333333;
+}
+
+.hpp-bcmc_mobile-timer,
+.hpp-wechatpay-timer,
+.hpp-qrcode-timer {
+	position: relative;
+	display: none;
+	float: left;
+	width: 100%;
+	color: #3c8a2e;
+}
+
+.hpp-wechatpay-or {
+	position: relative;
+	float: right;
+	height: 340px;
+	width: 1px;
+	background: #cdcdd3;
+}
+
+.hpp-wechatpay-or-label {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	border: 1px solid #cdcdd3;
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+	height: 35px;
+	margin: -20px 0 0 -17px;
+	width: 35px;
+	background: #ffffff;
+	font-size: 18px;
+	line-height: 32px;
+	text-align: center;
+}
+
+.hpp-bcmc_mobile-qrcode,
+.hpp-wechatpay-qrcode,
+.hpp-qrcode-container {
+	float: right;
+}
+
+.hpp-bcmc_mobile-qrcode-url {
+	border-left: 1px solid #cdcdd3;
+	display: block;
+}
+
+.hpp-wechatpay-qrcode-url,
+.hpp-qrcode-qrcode-url {
+	border: 1px solid #f8f7f3;
+	display: block;
+}
+
+.hpp-bcmc_mobile-qrcode-url,
+.hpp-bcmc_mobile-qrcode-url img,
+.hpp-wechatpay-qrcode-url,
+.hpp-wechatpay-qrcode-url img,
+.hpp-qrcode-qrcode-url,
+.hpp-qrcode-qrcode-url img {
+	display: block;
+	margin: 0 auto;
+}
+
+.hpp-bcmc_mobile-qrcode-url img,
+.hpp-wechatpay-qrcode-url img,
+.hpp-qrcode-qrcode-url img {
+	height: 270px;
+}
+
+.hpp-bcmc_mobile-message,
+.hpp-wechatpay-message,
+.hpp-qrcode-message {
+	display: none;
+	margin-top: 15px;
+	text-align: right;
+}
+
+/* Spinner */
+@keyframes hpp-spinner {
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@-webkit-keyframes hpp-spinner {
+	to {
+		-webkit-transform: rotate(360deg);
+	}
+}
+
+.hpp-spinner {
+	display: inline-block;
+	position: relative;
+	top: 7px;
+	left: -7px;
+	min-width: 24px;
+	min-height: 24px;
+}
+
+.hpp-spinner:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	height: 16px;
+	margin-top: -10px;
+	margin-left: -10px;
+	width: 16px;
+	content: '';
+}
+
+.hpp-spinner:not(:required):before {
+	border-radius: 50%;
+	border: 2px solid #cdcdd3;
+	border-top-color: #3c8a2e;
+	animation: hpp-spinner 1.2s linear infinite;
+	-moz-animation: hpp-spinner 1.2s linear infinite;
+	-webkit-animation: hpp-spinner 1.2s linear infinite;
+	content: '';
+}
+
+/* Helpers */
+.hpp-clearfix:before,
+.hpp-clearfix:after {
+	content: " ";
+	display: table;
+}
+
+.hpp-clearfix:after {
+	clear: both;
+}
+
+/* Finish e-banking */
+.suomenverkkomaksutBaseTable tr {
+	width: 100%;
+}
+
+.ebanking_FIHeader {
+	padding-top: 10px;
+}
+
+.ebanking_FIFrame {
+	float: right;
+	width: 50%;
+}
+
+.ebanking_FIText {
+	line-height: 1.3em;
+	padding-top: 10px;
+}
+
+/* Klarna */
+.fieldSubHeader {
+	font-size: 1.3em;
+	font-weight: bold;
+    padding: 15px 0 10px;
+}
+
+#klarnaTable {
+	width: 100%;
+}
+
+#klarnaTable td{
+	clear: both;
+	float: left;
+	padding-top: 5px;
+	width: 50%;
+}
+
+#klarnaOpenInvoiceGetAddressButton {
+	background-color: #00a3ff;
+	border-color: #00a3ff;
+	color: #fff;
+	margin: 10px 0;
+}
+
+#klarnaOpenInvoiceGetAddressButton::hover,
+#klarnaOpenInvoiceGetAddressButton::active {
+ 	background-color: #0073c0;
+}
+
+
+/* The responsive desktop/laptop version */
+@media only screen and (max-width: 767px) {
+
+	/* Default */
+	html,
+	body {
+		min-width: 320px;
+	}
+
+	html,
+	body,
+	#container {
+		width: 100%;
+	}
+
+	#logoheader {
+		height: 80px;
+		width: auto; 
+    	background: url("../img/logo-eyeem.png"); 
+    	background-position: left; 
+    	background-repeat: no-repeat; 
+    	background-color: transparent;
+	}
+
+	table.basetable,
+	table.basetable td,
+	.imgB {
+		width: auto;
+	}
+
+	#pageform {
+		padding: 10px;
+	}
+
+	#paymentMethods {
+		padding: 20px 0 0 10px;
+	}
+
+	table.basetable td {
+		display: block;
+	}
+
+	.paySubmit {
+		float: left;
+	}
+
+	/* Bancontact app and Bitcoin */
+	.hpp-bcmc_mobile-title-spacer,
+	.hpp-bcmc_mobile-logo,
+	.hpp-wechatpay-title-spacer,
+	.hpp-wechatpay-logo,
+	.hpp-wechatpay-or {
+		display: none;
+	}
+
+	.hpp-bcmc_mobile-timer,
+	.hpp-wechatpay-timer {
+		display: none !important;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions,
+	.hpp-wechatpay-title-step,
+	.hpp-wechatpay-title-instructions {
+		display: block;
+	}
+
+	#content .hpp-bcmc_mobile-title,
+	.hpp-bcmc_mobile-app,
+	.hpp-bcmc_mobile-qrcode,
+	#content .hpp-wechatpay-title,
+	.hpp-wechatpay-wallet,
+	.hpp-wechatpay-qrcode {
+		float: none;
+		width: 100%;
+	}
+
+	.hpp-stage-header {
+		margin: 0 0 15px 0;
+	}
+
+	#content .hpp-bcmc_mobile-title,
+	#content .hpp-wechatpay-title {
+		font-size: 20px;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions,
+	.hpp-bcmc_mobile-message,
+	.hpp-wechatpay-title-step,
+	.hpp-wechatpay-title-instructions,
+	.hpp-wechatpay-message {
+		text-align: center;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-wechatpay-title-step {
+		margin-bottom: 5px;
+	}
+
+	.hpp-bcmc_mobile-app,
+	.hpp-wechatpay-wallet {
+		padding: 35px 10px 10px 10px;
+	}
+
+	.hpp-wechatpay-wallet-button {
+		margin: 35px 0 0 0;
+	}
+
+	.hpp-bcmc_mobile-app-original,
+	.hpp-wechatpay-wallet-original,
+	.hpp-wechatpay-wallet-btc {
+		font-size: 25px;
+	}
+
+	.hpp-bcmc_mobile-qr-button,
+	.hpp-wechatpay-qr-button {
+		display: block;
+		margin: 10px 0 0 0;
+	}
+
+	.hpp-bcmc_mobile-qr-how {
+		margin: 21px 7px;
+	}
+
+	.hpp-bcmc_mobile-qrcode,
+	.hpp-wechatpay-qrcode {
+		padding: 0 10px 10px 10px;
+	}
+
+	.hpp-bcmc_mobile-qrcode-url,
+	.hpp-wechatpay-qrcode-url {
+		border: 1px solid #cdcdd3;
+		padding: 20px 0;
+	}
+
+	.hpp-bcmc_mobile-qrcode-url img,
+	.hpp-wechatpay-qrcode-url img {
+		height: 240px;
+	}
+
+	.ebanking_FIFrame {
+		float: left;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+	}
+}
+
+/* Responsive queries */
+@media only screen and (max-width: 767px) {
+
+}
+
+/* The mobile version, specific for Bancontact app*/
+@media only screen and (max-device-width: 767px),
+only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 2),
+only screen and (max-device-width: 767px) and (-webkit-min-device-pixel-ratio: 3) {
+
+	/* Default */
+	html,
+	body {
+		min-width: 320px;
+	}
+
+	html,
+	body,
+	#container {
+		width: 100%;
+	}
+
+	#logoheader {
+		background-position: center 15px;
+	}
+
+	table.basetable,
+	table.basetable td,
+	.imgB {
+		width: auto;
+	}
+
+	#pageform {
+		padding: 10px;
+	}
+
+	table.basetable td {
+		display: block;
+	}
+
+	.paySubmit {
+		float: left;
+	}
+
+	/* Bancontact app */
+	.hpp-bcmc_mobile-title-spacer,
+	.hpp-bcmc_mobile-logo {
+		display: none;
+	}
+
+	.hpp-bcmc_mobile-timer {
+		display: none !important;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions {
+		display: block;
+	}
+
+	#content .hpp-bcmc_mobile-title,
+	.hpp-bcmc_mobile-app,
+	.hpp-bcmc_mobile-qrcode {
+		float: none;
+		width: 100%;
+	}
+
+	.hpp-stage-header {
+		margin: 0 0 15px 0;
+	}
+
+	#content .hpp-bcmc_mobile-title {
+		font-size: 20px;
+		max-width: 100%;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions,
+	.hpp-bcmc_mobile-message {
+		text-align: center;
+	}
+
+	.hpp-bcmc_mobile-title-step {
+		margin-bottom: 5px;
+	}
+
+	.hpp-bcmc_mobile-app {
+		padding: 35px 10px 10px 10px;
+	}
+
+	.hpp-bcmc_mobile-app-button {
+		display: block;
+		margin: 10px 0 20px 0;
+	}
+
+	.hpp-bcmc_mobile-app-original {
+		font-size: 25px;
+	}
+
+	.hpp-bcmc_mobile-qr-button,
+	.hpp-bcmc_mobile-qr-how,
+	.hpp-bcmc_mobile-qrcode {
+		display: none;
+	}
+
+	/* Finnish E-banking */
+	.ebanking_FIFrame {
+		float: left;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+	}
+
+
+	.suomenverkkomaksutBaseTable {
+		box-sizing: border-box;
+		display: inline-block;
+		padding: 10px;
+	}
+
+}
+
+/* Now, the tablet version, specific for Bancontact app */
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+
+	/* Default */
+	html,
+	body {
+		min-width: 320px;
+	}
+
+	html,
+	body,
+	#container {
+		width: 100%;
+	}
+
+	#logoheader {
+		background-position: center 15px;
+	}
+
+	table.basetable,
+	table.basetable td,
+	.imgB {
+		width: auto;
+	}
+
+	#pageform {
+		padding: 10px;
+	}
+
+	table.basetable td {
+		display: block;
+	}
+
+	.paySubmit {
+		float: left;
+	}
+
+	/* Bancontact app */
+	.hpp-bcmc_mobile-title-spacer,
+	.hpp-bcmc_mobile-logo {
+		display: none;
+	}
+
+	.hpp-bcmc_mobile-timer {
+		display: none !important;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions {
+		display: block;
+	}
+
+	#content .hpp-bcmc_mobile-title,
+	.hpp-bcmc_mobile-app,
+	.hpp-bcmc_mobile-qrcode {
+		float: none;
+		width: 100%;
+	}
+
+	.hpp-stage-header {
+		margin: 0 0 15px 0;
+	}
+
+	#content .hpp-bcmc_mobile-title {
+		font-size: 20px;
+		max-width: 100%;
+	}
+
+	.hpp-bcmc_mobile-title-step,
+	.hpp-bcmc_mobile-title-instructions,
+	.hpp-bcmc_mobile-message {
+		text-align: center;
+	}
+
+	.hpp-bcmc_mobile-title-step {
+		margin-bottom: 5px;
+	}
+
+	.hpp-bcmc_mobile-app {
+		padding: 35px 10px 10px 10px;
+	}
+
+	.hpp-bcmc_mobile-app-info,
+	.hpp-bcmc_mobile-qr-info {
+		display: block;
+		margin: 0;
+	}
+
+	.hpp-bcmc_mobile-app-button {
+		display: block;
+		margin: 10px 0 20px 0;
+	}
+
+	.hpp-bcmc_mobile-app-original {
+		font-size: 25px;
+	}
+
+	.hpp-bcmc_mobile-qr-button {
+		display: block;
+		margin: 10px 0 0 0;
+	}
+
+	.hpp-bcmc_mobile-qr-how {
+		margin: 21px 7px;
+	}
+
+	.hpp-bcmc_mobile-qrcode {
+		padding: 0 10px 10px 10px;
+	}
+
+	.hpp-bcmc_mobile-qrcode-url {
+		border: 1px solid #cdcdd3;
+		padding: 20px 0;
+	}
+
+	.hpp-bcmc_mobile-qrcode-url img {
+		height: 240px;
+	}
+
+	/* Finnish E-banking */
+	.ebanking_FIFrame {
+		float: left;
+		box-sizing: border-box;
+		padding: 10px;
+		width: 100%;
+	}
+}
